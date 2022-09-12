@@ -17,7 +17,7 @@ We conducted several experiments on a benchmark multi-domain dataset, and evalua
 
 ## How to use this repository
 
-All of the data is stored in the data folder, and the data preprocessing part is in in data_pre.py.
+All of the data is stored in the **data** folder, and the data preprocessing part is in in data_pre.py.
 
 Bayesian Optimizaition empirical analysis:
   1. Run Multi_arm_bandit.ipynb: Multii armed bandits experiments 
@@ -31,9 +31,10 @@ Run Baseline.ipynb: includes all the baseline experiment
 
 MTL based CDR:
 Run cross_domain_learning.py for the Shared-Bottom based CDL, and MMoE based CDL models, all of the code for shared_bottom and MMoE based CDL models are in models_mdl folder
-  1. $ pip install -U deepctr-torch
-  2. Move folder models_mdl to under the downloaded deepctr_torch packages folderfrom step 1
-  3. run cross_domain_learning.py
+  1. `$ pip install -U deepctr-torch`
+  2. Move folder models_mdl to the downloaded deepctr_torch packages folder from step 1 <br/>
+     `mv models_mdl ../deepctr_torch`
+  4. run cross_domain_learning.py
 
 Bayesian Optimization:
 Run bays_opt.py for Bayesian Optimization experiments
